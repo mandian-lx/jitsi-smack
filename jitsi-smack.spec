@@ -142,7 +142,7 @@ done
 %mvn_file ":{*}" %{name}/@1-%{version} %{name}/@1
 
 # Strip parent
-%mvn_package :%{name}-universe __noinstall
+%mvn_package :%{oname}-universe __noinstall
 
 %build
 %mvn_build -- -f %{oname}/tags/%{oname}_%{oversion}/build/m2
