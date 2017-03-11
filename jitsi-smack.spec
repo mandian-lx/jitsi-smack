@@ -148,5 +148,5 @@ done
 %mvn_build -- -f %{oname}/tags/%{oname}_%{oversion}/build/m2
 
 %install
-%mvn_install
+%mvn_install -J %{oname}/tags/%{oname}_%{oversion}/build/m2/target/site/apidocs
 
